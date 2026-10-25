@@ -23,15 +23,15 @@ Ein String ist eine Kette von Zeichen, die in einfache ('...') oder doppelte (".
 gleich solange Start- und Endzeichen übereinstimmen. Mehrzeilige Strings: Mit drei Anführungszeichen """...""" kannst du langen Text 
 über mehrere Zeilen schreiben.
 '''
-#print('--- Lektion 1 ----)
-#print("Hallo Welt mit doppelten Anführungszeichen")
-#print('Hallo Welt mit einfachen Anführungszeichen')
+print('--- Lektion 1 ----')
+print("Hallo Welt mit doppelten Anführungszeichen")
+print('Hallo Welt mit einfachen Anführungszeichen')
 
-#mehrzeilig = """Erste zeile
-#Zweite Zeile
-#Dritte Zeile"""
+mehrzeilig = """Erste zeile
+Zweite Zeile
+Dritte Zeile"""
 
-#print(mehrzeilig)
+print(mehrzeilig)
 
 
 '''
@@ -40,11 +40,11 @@ gleich solange Start- und Endzeichen übereinstimmen. Mehrzeilige Strings: Mit d
 ##  Der Backslash \ unterbricht die normale Textverarbeitung und signalisiert Python ein Steuerzeichen.
 ##  Oben ist eine Tabelle für die einzelnen Backslash eingaben.
 
-#print('\n--- Lektion 2 ----')
-#print("Zeile 1\nZeile 2 (durch \\n getrennt)")
-#print("Einkaufsliste:\n\t- Aepfel (durch \\t eingerückt)\n\t- Bohnen")
-#print("Er sagte: \"Python ist genial!\"")
-#print("Dateipfad: /home/user/Coden/Python")
+print('\n--- Lektion 2 ----')
+print("Zeile 1\nZeile 2 (durch \\n getrennt)")
+print("Einkaufsliste:\n\t- Aepfel (durch \\t eingerückt)\n\t- Bohnen")
+print("Er sagte: \"Python ist genial!\"")
+print("Dateipfad: /home/user/Coden/Python")
 
 
 '''
@@ -55,23 +55,23 @@ umgewandelt werden muss. Die moderne und einfache Lösung sind f-strings: Ein f 
 in geschweiften klammern {...} winzusetzen.
 '''
 
-#print('\n--- Lektion 3 ---')
-#vorname = "Michael"
-#alter = 30
+print('\n--- Lektion 3 ---')
+vorname = "Michael"
+alter = 30
 
 ## Alte Methode mit str() Umwandlung:
 
-#print("Name: " + vorname + " , Alter: " + str(alter))
+print("Name: " + vorname + " , Alter: " + str(alter))
 
 
 ## Moderne Methode mit f-String:
 
-#print(f'name: {vorname}, Alter: {alter} (in 5 Jahren: {alter + 5})')
+print(f'name: {vorname}, Alter: {alter} (in 5 Jahren: {alter + 5})')
 
 
 ## String-Wiederholung mit *:
 
-#print("=" * 25)
+print("=" * 25)
 
 
 '''
@@ -88,18 +88,18 @@ in geschweiften klammern {...} winzusetzen.
 
 ## len(), Indexing & Slicing
 
-#print("\n--- Lektion 4 ---")
-#wort = "Python"
+print("\n--- Lektion 4 ---")
+wort = "Python"
 
-#print('Länge von \"Python\":', len(wort))
-#print('Erster Buchstabe (Index 0):', wort[0])
-#print("Letzter Buchstabe (Index -1):", wort[-1])
+print('Länge von \"Python\":', len(wort))
+print('Erster Buchstabe (Index 0):', wort[0])
+print("Letzter Buchstabe (Index -1):", wort[-1])
 
 ## Slicing: Index 0 bis 2 (Index 2 wird NICHT mitgenommen)
 
-#print('Slicing [0:2]:', wort[0:2])
-#print('Slicing [:4] (vom Anfang bis Index 3):', wort[:4])
-#print('Slicing [2:] (ab Index 2 bis zum Ende):', wort[2:])
+print('Slicing [0:2]:', wort[0:2])
+print('Slicing [:4] (vom Anfang bis Index 3):', wort[:4])
+print('Slicing [2:] (ab Index 2 bis zum Ende):', wort[2:])
 
 
 '''
@@ -116,18 +116,18 @@ Was eine Liste ist kommt später. Ist erstmal Nice to know!
 
 '''
 
-#print('\n--- Lektion 5 ---')
+print('\n--- Lektion 5 ---')
 
-#raw_text = "   Hallo Python Welt   "
+raw_text = "   Hallo Python Welt   "
 
-#print("Original mit Leerzeichen: '" + raw_text + "'")
-#print("Bereinigt mit .strip():   '" + raw_text.strip() + "'")
-#print("Großbuchstaben . upper(): ", raw_text.strip().upper())
-#print("Großbuchstaben . lower(): ", raw_text.strip().lower())
-#print("Text ersetzen .replace(): ", raw_text.strip().replace("Welt","Profi"))
+print("Original mit Leerzeichen: '" + raw_text + "'")
+print("Bereinigt mit .strip():   '" + raw_text.strip() + "'")
+print("Großbuchstaben . upper(): ", raw_text.strip().upper())
+print("Großbuchstaben . lower(): ", raw_text.strip().lower())
+print("Text ersetzen .replace(): ", raw_text.strip().replace("Welt","Profi"))
 
-#daten_string = "Max-24-Deutschland"
-#print("String zerlegen mit .split('-'):", daten_string.split("-"))
+daten_string = "Max-24-Deutschland"
+print("String zerlegen mit .split('-'):", daten_string.split("-"))
 
 
 '''
@@ -138,18 +138,18 @@ Was eine Liste ist kommt später. Ist erstmal Nice to know!
     - .isnumeric() / .isalpha(): Prüfen, ob ein String rein aus Zahlen oder rein aus Buchstaben besteht. 
 '''
 
-#print('\n--- Lektion 6 ----')
+print('\n--- Lektion 6 ----')
 
-#satz = "Das ist ein Python-Kurs"
+satz = "Das ist ein Python-Kurs"
 
-#print(satz)
-#print("Start-Index von 'Python' (.find()):", satz.find("Python"))
-#print("Ist 'Python' im Satz enthalten? (in):", "Python" in satz)
+print(satz)
+print("Start-Index von 'Python' (.find()):", satz.find("Python"))
+print("Ist 'Python' im Satz enthalten? (in):", "Python" in satz)
 
-#eingabe_zahl = "12345"
-#eingabe_text = "Python"
+eingabe_zahl = "12345"
+eingabe_text = "Python"
 
-#print(eingabe_zahl)
-#print(eingabe_text)
-#print("Ist '12345' numerisch? (.istnumeric()):", eingabe_zahl.isnumeric())
-#print("Besteht 'Python' nur aus Buchstaben? (.isalpha()):", eingabe_text.isalpha())
+print(eingabe_zahl)
+print(eingabe_text)
+print("Ist '12345' numerisch? (.istnumeric()):", eingabe_zahl.isnumeric())
+print("Besteht 'Python' nur aus Buchstaben? (.isalpha()):", eingabe_text.isalpha())

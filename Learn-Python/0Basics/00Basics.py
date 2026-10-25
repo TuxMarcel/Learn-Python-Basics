@@ -22,8 +22,8 @@ Viel Spaß beim lernen.
 -------------------------------------------------------------------------
 '''
 
-#print('Hallo Welt!')                                                            
-#print("Ich habe Hallo Welt programmiert und bin bald ein Python Profi!")        
+print('Hallo Welt!')                                                            
+print("Ich habe Hallo Welt programmiert und bin bald ein Python Profi!")        
  
 ## man kann '' als anführungs für Strings (Zeichenketten) nehmen
 ## aber auch "" doppelte Anführungszeichen ändern nichts daran, dass es ein String 
@@ -74,14 +74,14 @@ Zwei wichtige Zusatzfunktionen für Anfänger:
 '''
 ## 1. Standard-Rechenarten:
 
-#print(10 + 3)   ## + Addition 10+3 ergibt 13 im Terminal
-#print(10 - 3)   ## - Subtraktion 10-3 ergibt 7
-#print(10 * 3)   ## * Multiplikation 10 * 3 ergibt 30
-#print(10 / 3)   ## / Division 10 / 3 ergibt 3.3333333333333335 als Ausgabe im Terminal
+print(10 + 3)   ## + Addition 10+3 ergibt 13 im Terminal
+print(10 - 3)   ## - Subtraktion 10-3 ergibt 7
+print(10 * 3)   ## * Multiplikation 10 * 3 ergibt 30
+print(10 / 3)   ## / Division 10 / 3 ergibt 3.3333333333333335 als Ausgabe im Terminal
 
 # Es gibt jetzt aber noch eine Sache zu beachten und zwar kann man das + zum Beispiel auch dazu verschenden Zeicheketten miteinander zu verbinden.
 
-#print('1' + '1')  ## Ausgabe im Terminal ist 11 
+print('1' + '1')  ## Ausgabe im Terminal ist 11 
 
 '''
 Am besten du Testest einw enig was man jetzt schon alles mit den Datentypen machen kann zum Beispiel was passieren würde wenn du print('10' - '2') 
@@ -90,10 +90,10 @@ oder print("Hallo" + int(Welt)) passiert.
 
 ## 2. Besondere Operatoren:
 
-#print(10 // 3)     ## // Ganzzahldivision / Floor Division teilt und rundet das ergebnis ab. Ergebnis hier also 3.
-#print(10 % 3)      ## % Modulo / Restwert Teilt zwei Zahlen und gibt nur den Rest zurück. Ergebnis hier also 1. (Tip: Nützlich zur Prüfung ob eine Zahl gerade 
+print(10 // 3)     ## // Ganzzahldivision / Floor Division teilt und rundet das ergebnis ab. Ergebnis hier also 3.
+print(10 % 3)      ## % Modulo / Restwert Teilt zwei Zahlen und gibt nur den Rest zurück. Ergebnis hier also 1. (Tip: Nützlich zur Prüfung ob eine Zahl gerade 
                     ## oder ungerade ist)
-#print(10 ** 3)     ## ** Potenzierung ist gleich 10³ = 1000
+print(10 ** 3)     ## ** Potenzierung ist gleich 10³ = 1000
 
 
 ## 3. Die Vergleichsoperatoren < und > (Kleiner / Größer als)
@@ -118,17 +118,17 @@ Das Ergebnis eines solchen Vergleichs ist immer ein Wahrheitswert (bool: True od
 '''
 
 
-#x = 5
-#print(x)
+x = 5
+print(x)
 
 ## Der Wert 5 wird in der Variable x gespeichert und mit der print() funktion ausgegeben
 
-#print("x")
+print("x")
 
 ## Wegen der Anführungsstriche "" in der Funktion wird nun x und nicht 5 ausgegeben.
 
-#print(x)
-#x = 5
+print(x)
+x = 5
 
 ## Python führt Code von oben nach unten aus. Schreibt man es so gibt das Terminal eine Fehlermeldung.
 
@@ -150,9 +150,9 @@ ich möchte gerne bei euch in der Firma {firmenname} arbeiten.
 Ich würde mich über eine Antwort freuen!
 '''
 
-#firmenname = "SuperFirma"
-#print("Hallo liebes Team von " + firmenname + ", ich möchte gerne bei euch in der Firma " + firmenname + " arbeiten."
-#"ich würde mich über eine Antwort freuen!")
+firmenname = "SuperFirma"
+print("Hallo liebes Team von " + firmenname + ", ich möchte gerne bei euch in der Firma " + firmenname + " arbeiten."
+"ich würde mich über eine Antwort freuen!")
 
 '''
 Jetzt haben wir uns Theoretisch erstmal nur 1x "Superfirma" schreiben "Gespart".
@@ -165,11 +165,11 @@ Aber denk mal so nach: Stell dir vor du hättest einen Text wo die Variable 1000
 Man kann auch mehrere Variablen in einen Text einfügen. Und die Variante die Variablen "+ +" zu schreiben könnte bei längeren Texten umständlich und 
 unübersichtlich werden. Desegen kann man f-Strings verwenden.
 '''
-#firmenname = "SpiederFirma"
-#berufsbild = "Kammerjäger"
+firmenname = "SpiederFirma"
+berufsbild = "Kammerjäger"
 
-#print(f"Hallo liebes Team von {firmenname}, ich möchte gerne bei euch in der Firma {firmenname} arbeiten."
-#f" Ich habe eine Weiterbildung zum {berufsbild} gemacht.")
+print(f"Hallo liebes Team von {firmenname}, ich möchte gerne bei euch in der Firma {firmenname} arbeiten."
+f" Ich habe eine Weiterbildung zum {berufsbild} gemacht.")
 
 '''
 2 Dinge zu dem Code. Schreibst du f vor den String kannst du die Variablen in geschweiften Klammern setzen.
@@ -179,34 +179,34 @@ Die andere Sache ist meine Schreibweise nach dem Zeilenumbruch. Sowohl die Anfü
 Wie dir bestimmt aufgefallen ist  gibt das Terminal das aber nicht mit dem Zeilenumbruch an. Wenn du Zeilenumbrüche in der Terminalausgabe willst kannst du \n
 nutzen. Das sieht dann so aus:
 '''
-#firmenname = "SpiederFirma"
-#berufsbild = "Kammerjäger"
+firmenname = "SpiederFirma"
+berufsbild = "Kammerjäger"
 
-#print(f"Hallo liebes Team von {firmenname},\nich möchte gerne bei euch in der Firma {firmenname} arbeiten. \n"
-#f"Ich habe eine Weiterbildung zum {berufsbild} gemacht.")
+print(f"Hallo liebes Team von {firmenname},\nich möchte gerne bei euch in der Firma {firmenname} arbeiten. \n"
+f"Ich habe eine Weiterbildung zum {berufsbild} gemacht.")
 
 '''
 Mit Variablen kann man aber noch mehr machen. Angenommen wir wollen jetzt noch angeben wie Lange die weiterbildung gedauert hat.
 
 '''
-#firmenname = "SpiederFirma"
-#berufsbild = "Kammerjäger"
-#weiterbildungsdauer = 6
+firmenname = "SpiederFirma"
+berufsbild = "Kammerjäger"
+weiterbildungsdauer = 6
 
-#print(f"Hallo liebes Team von {firmenname},\nich möchte gerne bei euch in der Firma {firmenname} arbeiten. \n
-#f"Ich habe eine Weiterbildung zum {berufsbild} gemacht.\n
-#f"{weiterbildungsdauer} habe ich für Weiterbildung benötigt")
+print(f"""Hallo liebes Team von {firmenname},\nich möchte gerne bei euch in der Firma {firmenname} arbeiten. \n
+Ich habe eine Weiterbildung zum {berufsbild} gemacht.\n
+{weiterbildungsdauer} habe ich für Weiterbildung benötigt""")
 
 '''
 Was wir aber auch noch zusätzlich machen können ist in der Variable zu Rechnen. Jetzt waren wir gut und haben die Weiterbildung 2 Monate früher abgeschlossen.
 '''
-#firmenname = "SpiederFirma"
-#berufsbild = "Kammerjäger"
-#weiterbildungsdauer = 6 - 2
+firmenname = "SpiederFirma"
+berufsbild = "Kammerjäger"
+weiterbildungsdauer = 6 - 2
 
-#print(f"Hallo liebes Team von {firmenname},\nich möchte gerne bei euch in der Firma {firmenname} arbeiten. \n
-#f"Ich habe eine Weiterbildung zum {berufsbild} gemacht.\n
-#f"{weiterbildungsdauer} habe ich für Weiterbildung benötigt")
+print(f"""Hallo liebes Team von {firmenname},\nich möchte gerne bei euch in der Firma {firmenname} arbeiten.\n 
+Ich habe eine Weiterbildung zum {berufsbild} gemacht.\n
+{weiterbildungsdauer} habe ich für Weiterbildung benötigt""")
 
 '''
 Und das gute daran ist. Python rechnet für uns die 6 - 2 aus direkt aus. Und weil wir keine "" verwendet haben erkennt Python automatisch das es ein integer ist
